@@ -1,0 +1,706 @@
+/*=================================
+My Custom CSS
+=============
+
+Author: ASR SinthiYan
+Updated: February 2017
+Notes: Hand Coded for RR Foundation
+
+*===================================/
+
+/*------Start Base CSS------*/
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,500,700');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+	color: #5d5d5d;
+    font-size: 15px;
+    font-family: 'Roboto', sans-serif;
+}
+img {
+    height: auto;
+    max-width: 100%;
+	border: none;
+}
+body, html {
+    height: 100%;
+}
+a, a:hover {
+    text-decoration: none;
+}
+a:focus {
+	color: #333;
+	text-decoration: none;
+}
+a:focus, input:focus, textarea:focus, button:focus {
+	outline: 0 solid;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin-bottom: 15px;
+    margin-top: 0;
+}
+p {
+    margin-bottom: 10px;
+    margin-top: 0;
+}
+.float_left {
+	float: left;
+}
+.float_right {
+	float: right;
+}
+.fix:before, .fix:after {
+	content: "";
+	display: table;
+}
+.fix:after {
+	clear: both;
+}
+ul, ol {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+.section_padding {
+	padding: 80px 0;
+}
+/*------End Base CSS------*/
+/*-----Common Css------*/
+.sectionPadding{
+    padding: 100px 0;
+}
+.sPdT0{
+    padding:0 0 100px;
+}
+.singleBtn{
+  background: #fff;
+    border: 1px solid #7f56fd;
+  padding: 10px 25px;
+  color: #7f56fd;
+  display: inline-block;
+  text-transform: capitalize;
+  border-radius: 30px;
+    
+}
+.primaryBg{
+    position: relative;
+    z-index: 1;
+    
+}
+.primaryBg:after{
+    position: absolute;
+    left:0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    content: "";
+    z-index: -1;
+    opacity:.93;
+    
+    background-size: cover;
+    background-position: center center;
+    background: #7d55f7;
+    background: -moz-linear-gradient(top, #7d55f7 0%, #6e4dd4 100%);
+    background: -webkit-linear-gradient(top, #7d55f7 0%,#6e4dd4 100%);
+    background: linear-gradient(to bottom, #7d55f7 0%,#6e4dd4 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7d55f7', endColorstr='#6e4dd4',GradientType=0 );
+}
+/*-----/Common Css------*/
+/*------Start Here Global CSS------*/
+/*------Top Bar------*/
+.headerArea{
+    position: relative;
+    z-index: 1;
+}
+.headerArea:after{
+    
+}
+.topBar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+    z-index: 99;
+    padding: 20px 0;
+}
+.mainMenu ul li {
+  display: inline;
+}
+.mainMenu ul li a {
+  display: inline-block;
+  padding: 10px 10px;
+}
+.headerArea, .headerArea a {
+  color: #fff;
+}
+/*------/Top Bar------*/
+.homePageSlider, .homePageSlider .singleSlide, .homePageSlider .singleSlide div{
+    height: 100%;
+    width: 100%;
+}
+.homePageSlider .singleSlide div.owl-controls,.homePageSlider .singleSlide div.owl-controls div{
+    height: auto;
+    width: auto;
+}
+.homePageSlider{
+    z-index: -2;
+}
+
+.welcomeTextArea {
+  display: table;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%
+}
+.welcomeText{
+    display: table;
+    text-align: center;
+    width: 100%;
+}
+.welcomeTextInner {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.welcomeText h1 {
+  font-size: 50px;
+  font-weight: 700;
+  line-height: 65px;
+}
+.welcomeText ul li {
+  display: inline;
+}
+.welcomeText ul li {
+  display: inline-block;
+  padding: 0 15px;
+}
+a.singleBtn {
+  margin: 35px 0 0 0;
+  color: #7f56fd;
+}
+
+.headerBookmarks {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+    padding:50px 60px;
+}
+.headerBookmarks ul li {
+  display: inline;
+}
+.headerBookmarks ul li a {
+  display: inline-block;
+  padding: 0px 5px;
+}
+
+.sectionTitle {
+  margin-bottom: 50px;
+}
+.sectionTitle h1 {
+  font-size: 50px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #273f59;
+  position: relative;
+  padding-bottom: 10px;
+  margin-bottom: 35px;
+}
+.sectionTitle h1:after ,.sectionTitle h1:before{
+  position: absolute;
+  content: "";
+  left: 50%;
+  bottom: 0;
+  width: 120px;
+  height: 2px;
+  background: #6e4dd4;
+  margin-left: -60px;
+  /*! margin-top: 26px; */
+}
+.sectionTitle h1:before {
+  bottom:-10px;
+  width: 60px;
+  margin-left:-30px;
+}
+
+.myCvImg {
+  position: relative;
+  z-index: 1;
+}
+.myCvImg::after{
+  position: absolute;
+  left: 4%;
+  top: 9%;
+  height: 100%;
+  width: 100%;
+  border: 10px solid #6e4dd4;
+  content: "";
+  z-index: -1;
+  border-radius: 10px;
+  box-shadow: 0 0 5px 3px #ddd;
+  background: transparent;
+}
+.myCvImg:before {
+}
+.myCvImg a {
+  display: block;
+  width: 92%;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.myCvImg a img {
+  min-width: 100%;
+}
+.myCvInner {
+  padding: 60px;
+}
+.myCvInner > p {
+  border-bottom: 1px dashed #c1c1c1;
+  padding-bottom: 30px;
+}
+.myCvDetails {
+  padding: 30px 0;
+}
+
+.myCvDetails ul li {
+  display: inline-block;
+  /*! float: left; */
+  /*! padding: 0 40px; */
+  width: 300px;
+  margin-bottom: 5px;
+}
+.myCvDetails ul li p {
+  display: inline-block;
+}
+.myCvDetails ul li p {
+  color: #2c4055;
+  font-weight: bold;
+}
+.myCvDetails ul li p span {
+  color: #636262;
+  font-weight: 400;
+  text-transform: capitalize;
+}
+.myCv .singleBtn {
+  background: #7f56fd;
+  color: #fff;
+  padding-right: 35px;
+  padding-left: 35px;
+  margin-right: 25px;
+}
+
+
+.primaryBg .sectionTitle, .primaryBg .sectionTitle h1 {
+  color: #fff;
+}
+.primaryBg .sectionTitle h1::after, .primaryBg .sectionTitle h1::before {
+  background: #fff;
+}
+.mySkillArea{
+    background-image: url(assets/img/myskill.jpg);
+}
+.mySkil {
+  background: #fff;
+  padding: 30px;
+  margin: 0 15px;
+  border-radius: 10px;
+  text-transform: uppercase;
+  color: #273f59;
+}
+.mySkil a {
+  display: block;
+  height: 50px;
+  width: 50px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+.mySkil a img {
+  min-width: 100%;
+}
+.mySkil h4 {
+  font-size: 15px;
+}
+.mySkil .progress {
+  height: 10px;
+  margin-bottom: 0;
+  margin-top: 30px;
+}
+.mySkil .progress-bar {
+  background: #7fb7fa;
+}
+.myServiceArea{
+  display: inline-block;
+}
+.myService {
+  box-shadow: 0 0 4px;
+  padding: 30px;
+  margin: 0 0px 0 15px;
+}
+.myService .cBg1 .cBg2 span {
+  color: #fff;
+  background: #7f56fd;
+  height: 40px;
+  width: 40px;
+  display: inline-block;
+  line-height: 40px;
+  border-radius: 50%;
+}
+.myService .cBg1 {
+  margin-bottom: 30px;
+  padding:10px;
+  background: #cdc0f4;
+  border-radius: 50%;
+  display: inline-block;
+}
+.myService .cBg1 .cBg2 {
+  padding: 10px;
+  display: inline-block;
+  background: #b09cee;
+  border-radius: 50%;
+}
+h3 {
+  text-transform: uppercase;
+  font-size: 20px;
+  color: #273f59;
+}
+
+.widgetArea{
+    min-height: 270px;
+    color:#fff;
+    background-image: url(assets/img/widgetBg.jpg);
+}
+.widgetArea ul li {
+  display: inline-block;
+  margin-left:183px;
+    text-align: left;
+}
+.widgetArea ul {
+  overflow: hidden;
+  text-align: center;
+}
+.widgetArea ul li:first-child{
+    margin-left:0;
+}
+.widgetArea p{
+    float: right;
+    margin-bottom: 0;
+}
+.widgetArea i{
+    float:left;
+}
+.widgetArea i, .widgetArea .counter {
+  font-size: 35px;
+  font-weight: bold;
+    display: block;
+}
+.widgetArea .conterName {
+  display: block;
+  font-size: 15px;
+  font-weight: normal;
+}
+.widgetArea i {
+  margin-top: 20px;
+  margin-right: 20px;
+}
+.myMenArea{
+    background-image: url(assets/img/mymenbg.jpg);
+}
+
+.sectionPadding.myMenArea {
+  padding-top: 50px;
+  color: #fff;
+}
+.sectionPadding.myMenArea a {
+  display: inline-block;
+  overflow: hidden;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+.sectionPadding.myMenArea h4 {
+  font-size: 25px;
+  font-weight: 500;
+  margin-bottom: 40px;
+}
+.sectionPadding.myMenArea h4 span{
+    display: block;
+    font-size: 15px;
+    font-weight: 400;
+    margin-top:5px;
+}
+.sectionPadding.myMenArea ul li {
+  display: inline;
+}
+.sectionPadding.myMenArea ul li a {
+  display: inline-block;
+}
+.sectionPadding.myMenArea ul {
+  margin-top: 40px;
+}
+.myMenArea .owl-dots {
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  margin-bottom: -50px;
+  width: 100%;
+  margin-left: -50%;
+    margin-right:-3px;
+}
+.myMenArea .owl-dots div {
+  width: 20px;
+  height: 5px;
+  display: inline-block;
+  border: 1px solid #fff;
+  border-radius: 5px;
+    margin-right:3px;
+}
+.myMenArea .owl-dots div.active {
+  background: #fff;
+}
+
+.blogPost > a {
+  display: block;
+  height: 200px;
+}
+.blogPost > a img {
+  min-height: 100%;
+}
+.blogPost {
+  box-shadow: 0 0 5px 0px #ddd;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.blogPost, .blogpost .blogpostTime {
+  text-transform: uppercase;
+}
+
+.blogPostInner {
+  padding: 20px;
+}
+.blogPostInner h4 {
+  font-size: 20px;
+  color: #273f59;
+  margin-bottom: 20px;
+}
+.blogPost p {
+  text-transform: capitalize;
+}
+
+.portfolioMenu li {
+  display: inline-block;
+  margin-left: 5px;
+    cursor: pointer;
+}
+.portfolioMenu li.active {
+  background: #7f56fd;
+  color: #fff;
+}
+
+.portfolioMenu {
+  margin-bottom: 50px;
+  margin-left: -5px;
+}
+.allPortfolios{
+    margin-left:-30px;
+}
+.singlePortfolio {
+	height: 500px;
+	position: relative;
+	margin-bottom: 30px;
+	border-radius: 10px;
+	overflow: hidden;
+	width: calc(33.333% - 33px);
+	/* float: left; */
+	margin-left: 30px;
+	display: inline-block;
+}
+.singlePortfolio > img {
+  min-height: 100%;
+}
+.portfolioHover {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  color: #fff;
+  transform: scale(.8);
+  transition: .3s;
+  opacity: 0;
+  visibility: hidden;
+}
+.portfolioHover h4 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  font-size: 20px;
+  font-weight: 500;
+  padding: 5px 20px;
+  text-transform: uppercase;
+}
+.portfolioHover h4 span {
+  display: block;
+  font-size: 15px;
+    text-align: left;
+  font-weight: 400;
+  margin-top: 5px;
+}
+.portfolioHover a {
+  position: absolute;
+  top: 50%;
+  top: 50%;
+  color: #7f56fd;
+  background: #fff;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  border-radius: 50%;
+  margin-top: -25px;
+  margin-left: -25px;
+}
+.singlePortfolio:hover .portfolioHover {
+  opacity: 1;
+  transform: scale(1);
+  visibility: visible;
+}
+
+
+.myTeam .blogPost {
+  height: 400px;
+}
+.myTeam a.myTeamImg {
+  height: 300px;
+  width: 100%;
+  overflow: hidden;
+    transition: .3s;
+}
+.myTeam .blogPost:hover a.myTeamImg{
+    height:0;
+}
+.myTeam .blogPost a img {
+  min-width: 100%;
+  min-height: 100%;
+}
+.myTeam .blogPostInner h4 {
+  text-align: left;
+  font-size: 18px;
+}
+.myTeam .blogPostInner h4 span {
+  display: block;
+  font-size: 15px;
+  text-transform: capitalize;
+  margin-top: 5px;
+}
+.myTeam .blogPostInner {
+  text-align: left;
+  max-height: 400px;
+  overflow: hidden;
+  padding-top: 30px;
+}
+.myTeam .progresBar p {
+  font-size: 14px;
+  color: #373b3f;
+}
+.myTeam .progresBar .progress-bar {
+	background: #7f56fd;
+	position: relative;
+	z-index: 1;
+	color: #2a445f;
+}
+.myTeam .progresBar .progress {
+  height: 7px;
+    overflow: visible;
+}
+.myTeam ul {
+  border-top: 1px dashed #444;
+  padding: 5px 0px 0;
+  margin-top: 25px;
+}
+.myTeam ul li {
+  display: inline-block;
+}
+.myTeam ul li a {
+  display: block;
+  padding: 5px 5px;
+  color: #78909c;
+}
+.myTeam .progresBar {
+  padding: 29px 0px;
+}
+.myTeam .progress-bar span {
+  position: absolute;
+  right: 0;
+  top: 0;
+  margin-top: -28px;
+  margin-right: -15px;
+}
+.myTeam .progresBar .progress-bar div {
+	background: #7156fd;
+	width: 10px;
+	height: 10px;
+	position: absolute;
+	right: 0;
+	top: 0;
+	margin-top: -2px;
+	margin-right: -13px;
+	border-radius: 50%;
+}
+.myTeam .progresBar .progress-bar div::after {
+	position: absolute;
+	content: "";
+	border: 2px solid #7156fd;
+	width: 18px;
+	height: 18px;
+	border-radius: 50%;
+	right: 0;
+	top: 0;
+	margin-top: -4px;
+	margin-right: -4px;
+}
+/*--------footerarea--------*/
+
+.footerArea {
+  background: #263238;
+  padding: 60px 0;
+  color: #fff;
+}
+.footerArea h2 {
+  font-size: 30px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+ul.cantactUs li {
+  display: inline;
+}
+ul.contactUs li {
+  display: inline-block;
+  padding: 0 15px;
+  color: #9ca1a3;
+}
+ul.contactUs li i {
+  padding-right: 10px;
+}
+ul.contactUs {
+  padding: 30px 0 40px;
+}
+ul.footerBookmarks li {
+  display: inline;
+}
+ul.footerBookmarks li a {
+  display: inline-block;
+  color: #fff;
+  padding: 15px 20px 30px;
+}
+.footerArea p {
+  margin-bottom: 0;
+}
+/*--------.footerarea--------*/
